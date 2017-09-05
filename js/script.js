@@ -1,6 +1,13 @@
-window.onload = check;
+var checkbox;
+var empty;
 
-var checkbox = document.getElementsByClassName('check');
+
+window.onload = function () {
+    checkbox = document.getElementsByClassName('check');
+    empty = document.getElementById('empty');
+
+    check();
+}
 
 function check() {
     for (var i = 0; i < checkbox.length; i++) {
@@ -42,6 +49,7 @@ function addNewItems() {
     if (newText === '') {
         alert('Please add something to the list');
     } else {
+        empty.innerHTML = '';
         list.insertBefore(div, list.childNodes[0]);
         div.insertBefore(input, div.childNodes[0]);
         div.insertBefore(newItem, div.childNodes[1]);
@@ -60,8 +68,6 @@ function item() {
 function deleteItem(e) {
     e.target.parentNode.remove();
     if (checkbox.length === 0) {
-        var empty = document.getElementById('empty');
         empty.innerHTML = 'Your list is empty';
-        // alert('Your list is empty!');
     }
 }
