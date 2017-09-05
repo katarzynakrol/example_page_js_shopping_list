@@ -11,7 +11,7 @@ Użyte technologie
 - CSS3,
 - JavaScript.
 
-Kalkulator został testowany na poniższych przeglądarkach:
+Lista została przetestowana na poniższych przeglądarkach:
 -------------------
 - Firefox (version 55.0.3),
 - Google Chrome (version 60.0.3112.113).
