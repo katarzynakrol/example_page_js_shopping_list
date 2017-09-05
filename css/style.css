@@ -1,0 +1,116 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.2em;
+}
+
+* {
+    margin: 0 auto;
+}
+
+h2, #empty {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 50px 0 15px;
+}
+
+#addText,
+.addButton {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+.container {
+    width: 280px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background-color: #fff;
+    border: 2px solid #798E8D;
+    color: #666;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: 250px;
+}
+
+.item {
+    height: 50px;
+}
+
+.item p {
+    float: left;
+    margin-left: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.deleteButton {
+    font-size: 0.6em;
+    padding: 1px 7px;
+    margin-top: 7px;
+    display: flex;
+    float: right;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #c1c1c1;
+    color: #fff;
+}
+
+.deleteButton:before {
+    content: "\00d7";
+}
+
+input[type="checkbox"] {
+    float: left;
+    margin: 15px;
+}
+
+.cross {
+    text-decoration: line-through;
+}
+
+#addNewItem {
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addText {
+    width: 200px;
+    height: 40px;
+    margin: 0;
+    background-color: #a3bdbc;
+    border: 1px solid #a3bdbc;
+}
+
+.addButton {
+    margin: 0;
+    height: 44px;
+    width: 60px;
+    background-color: #798E8D;
+    border: 1px solid #798E8D;
+    color: #fff;
+    cursor: pointer;
+}

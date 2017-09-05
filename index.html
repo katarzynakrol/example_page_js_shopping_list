@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping list</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Shopping list</h2>
+    <div id="addNewItem">
+        <input id="addText" type="text" placeholder="New...">
+        <input class="addButton" type="submit" value="Add" onclick="addNewItems()">
+    </div>
+    <div class="container">
+        <h4 id="empty"></h4>
+        <div class="list" id="first">
+            <div class="item">
+                <input type="checkbox" class="check">
+                <p>Milk</p>
+                <span class="deleteButton"></span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="check">
+                <p>Eggs</p>
+                <span class="deleteButton"></span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="check">
+                <p>Bread</p>
+                <span class="deleteButton"></span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="check">
+                <p>Butter</p>
+                <span class="deleteButton"></span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="check">
+                <p>Chicken</p>
+                <span class="deleteButton"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
