@@ -26,6 +26,13 @@ function cross(ev) {
     }
 }
 
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 13) {
+        addNewItems();
+    }
+});
+
+
 function addNewItems() {
 
     var list = document.getElementById('first');
@@ -55,6 +62,7 @@ function addNewItems() {
         div.insertBefore(newItem, div.childNodes[1]);
         div.insertBefore(span, div.childNodes[2]);
     }
+
     check();
 }
 
