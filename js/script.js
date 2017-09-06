@@ -26,14 +26,16 @@ function cross(ev) {
     }
 }
 
-document.addEventListener('keyup', function(e) {
+document.addEventListener('keyup', function (e) {
     if (e.keyCode == 13) {
         addNewItems();
     }
 });
 
 
+
 function addNewItems() {
+    var array = document.getElementsByTagName('p');
 
     var list = document.getElementById('first');
 
@@ -53,6 +55,15 @@ function addNewItems() {
 
     newItem.appendChild(document.createTextNode(newText));
 
+
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].innerHTML.toLowerCase() == newText.toLowerCase()) {
+            alert('This is already on your list');
+            return true;
+        }
+    }
+
+
     if (newText === '') {
         alert('Please add something to the list');
     } else {
@@ -62,6 +73,7 @@ function addNewItems() {
         div.insertBefore(newItem, div.childNodes[1]);
         div.insertBefore(span, div.childNodes[2]);
     }
+
 
     check();
 }
