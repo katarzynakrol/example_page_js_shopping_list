@@ -2,13 +2,16 @@ body {
     background-color: #222;
     color: #fff;
     font-size: 2.2em;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
     margin: 0 auto;
 }
 
-h2, #empty {
+h2,
+#empty {
     font-family: 'Poiret One', cursive;
     text-align: center;
     font-weight: normal;
@@ -26,25 +29,15 @@ h2 {
 }
 
 .container {
-    width: 280px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    padding: 50px 30px;
-    background-color: #fff;
-    border: 2px solid #798E8D;
-    color: #666;
-    border-radius: 50px;
+    color: #222;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .list {
-    width: 250px;
+    background-color: #fff;
+    padding: 50px 30px;
+    border: 2px solid #798E8D;
+    border-radius: 50px;
 }
 
 .item {
@@ -53,15 +46,14 @@ h2 {
 
 .item p {
     float: left;
-    margin-left: 10px;
+    margin: 0 30px 0 10px;
     font-family: 'Dancing Script', cursive;
 }
 
 .deleteButton {
     font-size: 0.6em;
     padding: 1px 7px;
-    margin-top: 7px;
-    display: flex;
+    margin: 7px 0 0 30px;
     float: right;
     cursor: pointer;
 }
